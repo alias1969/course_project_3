@@ -1,2 +1,2 @@
 # course_project_3
-Project for course work #3
+Проект в рамках курсовой работы №3 курса Python разработчик
