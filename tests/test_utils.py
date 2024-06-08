@@ -4,7 +4,6 @@ from utils.utils import read_file_json, exist_file
 import pytest
 
 
-# Тестирование функций чтения операций из словаря json
 @pytest.fixture
 def dict_operation():
     # создаем фикстуру исходного словаря одной записи операции
