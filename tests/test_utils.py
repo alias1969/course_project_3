@@ -39,7 +39,6 @@ def structure_operation():
     }
 
 
-
 def test_get_value(dict_operation):
     """ Тестирование функции получения значения словаря по ключу"""
     assert get_value(dict_operation, 'state') == 'EXECUTED'
@@ -57,7 +56,6 @@ def test_parse_string(dict_operation):
     assert parse_string({}, 'operationAmount/currency/name') == ''
 
 
-# Тестирование функций получения словаря по структуре соответствия ключей словарей json и класса
 def test_get_dict_value_1(dict_operation):
     structure_operation_1 = {
         'date': 'date',
@@ -154,12 +152,11 @@ def test_get_dict_value_6(structure_operation):
     }
 
 
-# Тестирование функций чтения файла
 def test_exist_file():
     """ Проверка существования файла"""
     assert exist_file('__init__.py') is True
     assert exist_file('') is False
-    assert exist_file('test_format_utils.py') is True
+    assert exist_file('test_format.py') is True
 
 
 def test_read_file_json():
